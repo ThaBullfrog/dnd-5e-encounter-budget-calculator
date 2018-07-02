@@ -13,6 +13,17 @@ html, body {
   padding: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.content {
+  flex: 1;
+}
+
 a {
   color: $link-color;
 }
@@ -47,7 +58,6 @@ p, h1, h2, h3, h4, h5, h6, ol, ul {
 
 .footer-background {
   background: $footer-color;
-  box-shadow: 0px 500px 0px 500px $footer-color;
   color: white;
   a {
     color: color-tint($link-color, 20);
